@@ -52,9 +52,9 @@ function checkForMatching() {
     isMatch ? (disableCards(), endGame()) : unflipCards();
 
 }
-let count = 0;
+let count = 100;
 function endGame() {
-    count += 1;
+    count += 2;
     if (count === 6) {
         showPopup();
     }
