@@ -17,7 +17,7 @@ let month = (date.getMonth() + 1).toString();
 let day = date.getDate().toString();
 let codeDate = day + month;
 
-let scoreCount = 0;
+let scoreCount = 500;
 function flipCard() {
     scoreCount++;
     document.getElementById("score__now").innerHTML = "Очков:" + Math.floor(scoreCount/2);
@@ -52,9 +52,9 @@ function checkForMatching() {
     isMatch ? (disableCards(), endGame()) : unflipCards();
 
 }
-let count = 100;
+let count = 0;
 function endGame() {
-    count += 2;
+    count += 1;
     if (count === 6) {
         showPopup();
     }
