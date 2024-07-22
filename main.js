@@ -17,7 +17,7 @@ let month = (date.getMonth() + 1).toString();
 let day = date.getDate().toString();
 let codeDate = day + month;
 
-let scoreCount = 500;
+let scoreCount = 8600;
 function flipCard() {
     scoreCount++;
     document.getElementById("score__now").innerHTML = "Очков:" + Math.floor(scoreCount/2);
