@@ -22,7 +22,7 @@ function getScore() {
 }
 
 function addOne() {
-  setScore(getScore() + 1)
+  setScore(getScore() + 10)
   setImage()
 }
 
